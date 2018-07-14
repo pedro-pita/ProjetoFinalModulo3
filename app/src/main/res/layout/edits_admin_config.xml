@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/adicionar"
+        app:layout_constraintEnd_toEndOf="@+id/levelInsert"
+        app:layout_constraintStart_toStartOf="@+id/levelInsert"
+        app:layout_constraintTop_toBottomOf="@+id/levelInsert" />
+
+    <EditText
+        android:id="@+id/nomeView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/nome"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/imagemInsert"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/linkDaImagem"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/nomeView"
+        app:layout_constraintStart_toStartOf="@+id/nomeView"
+        app:layout_constraintTop_toBottomOf="@+id/nomeView" />
+
+    <EditText
+        android:id="@+id/moradaView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/morada"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/imagemInsert"
+        app:layout_constraintStart_toStartOf="@+id/imagemInsert"
+        app:layout_constraintTop_toBottomOf="@+id/imagemInsert" />
+
+    <EditText
+        android:id="@+id/codigoPostalView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/codigoPostal"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/moradaView"
+        app:layout_constraintStart_toStartOf="@+id/moradaView"
+        app:layout_constraintTop_toBottomOf="@+id/moradaView" />
+
+    <EditText
+        android:id="@+id/telefoneView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/telefone"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/codigoPostalView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/codigoPostalView"
+        app:layout_constraintTop_toBottomOf="@+id/codigoPostalView" />
+
+    <EditText
+        android:id="@+id/latitudeInsert"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/latitude"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/emailInsert"
+        app:layout_constraintStart_toStartOf="@+id/emailInsert"
+        app:layout_constraintTop_toBottomOf="@+id/emailInsert" />
+
+    <EditText
+        android:id="@+id/longitudeInsert"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/longitude"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/latitudeInsert"
+        app:layout_constraintStart_toStartOf="@+id/latitudeInsert"
+        app:layout_constraintTop_toBottomOf="@+id/latitudeInsert" />
+
+    <EditText
+        android:id="@+id/emailInsert"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/telefoneView"
+        app:layout_constraintStart_toStartOf="@+id/telefoneView"
+        app:layout_constraintTop_toBottomOf="@+id/telefoneView" />
+
+    <Button
+        android:id="@+id/voltar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/voltar"
+        app:layout_constraintEnd_toEndOf="@+id/add"
+        app:layout_constraintStart_toStartOf="@+id/add"
+        app:layout_constraintTop_toBottomOf="@+id/add" />
+
+    <EditText
+        android:id="@+id/loginInsert"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/login"
+        app:layout_constraintEnd_toEndOf="@+id/longitudeInsert"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/longitudeInsert"
+        app:layout_constraintTop_toBottomOf="@+id/longitudeInsert" />
+
+    <EditText
+        android:id="@+id/passwordInsert"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        app:layout_constraintEnd_toEndOf="@+id/loginInsert"
+        app:layout_constraintStart_toStartOf="@+id/loginInsert"
+        app:layout_constraintTop_toBottomOf="@+id/loginInsert" />
+
+    <EditText
+        android:id="@+id/levelInsert"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/nivel"
+        app:layout_constraintEnd_toEndOf="@+id/passwordInsert"
+        app:layout_constraintStart_toStartOf="@+id/passwordInsert"
+        app:layout_constraintTop_toBottomOf="@+id/passwordInsert" />
+
+</android.support.constraint.ConstraintLayout>

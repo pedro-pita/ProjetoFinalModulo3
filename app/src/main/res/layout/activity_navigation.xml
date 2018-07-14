@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".geofence.navigation.NavigationActivity">
+
+    <fragment
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginBottom="400dp"
+        map:cameraBearing="112.5"
+        map:cameraTilt="30"
+        map:cameraZoom="15"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintTop_toTopOf="parent"
+        map:layout_constraintVertical_bias="0.0"
+        map:mapType="normal"
+        map:uiCompass="true"
+        map:uiZoomControls="false"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/wayDriveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:text="@string/wayDrive"
+        map:layout_constraintBottom_toBottomOf="@+id/wayWalkBtn"
+        map:layout_constraintStart_toEndOf="@+id/wayWalkBtn"
+        map:layout_constraintTop_toTopOf="@+id/wayWalkBtn" />
+
+    <Button
+        android:id="@+id/wayWalkBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:layout_toLeftOf="@+id/wayDriveBtn"
+        android:text="@string/wayWalk"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toBottomOf="@+id/map" />
+
+    <TextView
+        android:id="@+id/distanceText"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/wayWalkBtn"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="#000000"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintTop_toBottomOf="@+id/durationText" />
+
+    <TextView
+        android:id="@+id/durationText"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/distanceText"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="#000000"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/fences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fences"
+        map:layout_constraintBottom_toBottomOf="@+id/wayDriveBtn"
+        map:layout_constraintStart_toEndOf="@+id/wayDriveBtn"
+        map:layout_constraintTop_toTopOf="@+id/wayDriveBtn" />
+
+    <TextView
+        android:id="@+id/nomeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/nome"
+        map:layout_constraintStart_toStartOf="@+id/idView"
+        map:layout_constraintTop_toBottomOf="@+id/idView" />
+
+    <TextView
+        android:id="@+id/moradaView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/morada"
+        map:layout_constraintStart_toStartOf="@+id/nomeView"
+        map:layout_constraintTop_toBottomOf="@+id/nomeView" />
+
+    <TextView
+        android:id="@+id/codigoPostalView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/codigoPostal"
+        map:layout_constraintStart_toStartOf="@+id/moradaView"
+        map:layout_constraintTop_toBottomOf="@+id/moradaView" />
+
+    <TextView
+        android:id="@+id/telefoneView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/telefone"
+        map:layout_constraintStart_toStartOf="@+id/codigoPostalView"
+        map:layout_constraintTop_toBottomOf="@+id/codigoPostalView" />
+
+    <TextView
+        android:id="@+id/emailView"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/email"
+        map:layout_constraintStart_toStartOf="@+id/telefoneView"
+        map:layout_constraintTop_toBottomOf="@+id/telefoneView" />
+
+    <ImageButton
+        android:id="@+id/favoritos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/transparent"
+        android:src="@drawable/nao_favorito"
+        map:layout_constraintBottom_toBottomOf="@+id/fences"
+        map:layout_constraintStart_toEndOf="@+id/fences"
+        map:layout_constraintTop_toTopOf="@+id/fences" />
+
+    <TextView
+        android:id="@+id/idView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/id"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toBottomOf="@+id/wayWalkBtn" />
+
+    <ImageButton
+        android:id="@+id/voltarBtn"
+        android:layout_width="63dp"
+        android:layout_height="58dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ib_client"
+        android:contentDescription="reset"
+        android:padding="6dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/back"
+        android:backgroundTint="@android:color/transparent"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toEndOf="@+id/emailView"
+        map:layout_constraintHorizontal_bias="0.0"
+        map:layout_constraintStart_toStartOf="@+id/emailView"
+        map:layout_constraintTop_toBottomOf="@+id/emailView"
+        map:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>

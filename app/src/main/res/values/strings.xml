@@ -1,3 +1,32 @@
 <resources>
-    <string name="app_name">ProjetoFinalModulo3</string>
+    <string name="app_name">School Maps</string>
+    <string name="facebook_app_id">392027124644388</string>
+    <string name="fb_login_protocol_scheme">fb392027124644388</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="google_maps_API_key">AIzaSyDXjeHRrDSxSJiOA_LQjbuOkmDIFu-74pU</string>
+    <string name="name">Nome</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="registar">Registar</string>
+    <string name="nome">Nome</string>
+    <string name="voltarParaLogin">Voltar Para Login</string>
+    <string name="usersLocais">Users Locais</string>
+    <string name="facebookUsers">Facebook Users</string>
+    <string name="escolas">Escolas</string>
+    <string name="iniciarSessaoAutomaticamente">Iniciar sessão automaticamente</string>
+    <string name="adicionar">Adicionar</string>
+    <string name="linkDaImagem">Link da Imagem</string>
+    <string name="morada">Morada</string>
+    <string name="codigoPostal">Codigo Postal</string>
+    <string name="telefone">Telefone</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="email">Email</string>
+    <string name="voltar">Voltar</string>
+    <string name="nivel">Nivel</string>
+    <string name="id">ID</string>
+    <string name="idFacebook">ID Facebook</string>
+    <string name="wayDrive">Way Drive</string>
+    <string name="wayWalk">Way Walk</string>
+    <string name="fences">Fences</string>
 </resources>

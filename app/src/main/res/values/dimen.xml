@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="imgSize">100dp</dimen>
+    <dimen name="cardTextSize">20sp</dimen>
+    <dimen name="titleDetails">27sp</dimen>
+    <dimen name="textDetails">15sp</dimen>
+    <dimen name="padding">10dp</dimen>
+    <dimen name="textSize">30sp</dimen>
+    <dimen name="imgBig">250dp</dimen>
+</resources>
